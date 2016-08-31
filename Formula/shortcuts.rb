@@ -1,8 +1,8 @@
 class Shortcuts < Formula
   desc "CLI manager for your text replacements on macOS"
   homepage "https://github.com/rodionovd/shortcuts"
-  url "https://github.com/rodionovd/shortcuts/archive/v1.0.0.tar.gz"
-  sha256 "74d1d123947d249b9695bdcd613a3977cebd6759d22fb78f3b33d5e4be8af2e3"
+  url "https://github.com/rodionovd/shortcuts/archive/v1.1.0.tar.gz"
+  sha256 "aa74d875256b4fe440b96a8b4c13a4615f7085257b2da1e8c2f1cbfd912334cc"
 
   head "https://github.com/rodionovd/shortcuts.git"
 
@@ -15,6 +15,6 @@ class Shortcuts < Formula
   end
 
   test do
-    system "#{bin}/shortcuts", "list"
+    system "#{bin}/shortcuts", "read"
   end
 end
