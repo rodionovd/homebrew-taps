@@ -6,7 +6,7 @@ class Shortcuts < Formula
   depends_on :xcode => :build
   depends_on :macos => :el_capitan
   
-  if MacOS.release <= :el_capitan
+  if MacOS.version <= :el_capitan
     url "https://github.com/rodionovd/shortcuts/archive/v1.1.1.tar.gz"
     sha256 "be38d1e0f21de25f2695853b75d5ec9d4686e3adcf0e41b9278c6d728b6d224e"
   else
